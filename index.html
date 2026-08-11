@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<base href="https://samanazehra.github.io/Landing-Page-3.0/" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Secure Login</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet" />
+</head>
+<body>
+
+  <div class="page-bg" aria-hidden="true"></div>
+
+  <div class="portal-wrap">
+
+    <div class="brand-row fade-up" style="animation-delay:0.05s;">
+      <img src="logo_purple.png" alt="SSGC logo" class="brand-logo" />
+    </div>
+
+    <div class="login-container fade-up" style="animation-delay:0.18s;">
+      <h2>HR Self-Service Portal</h2>
+      <p class="subtext">Sign in to access the SSGC HR Portal</p>
+
+      <!-- Ensure the form uses POST and submits to a secure endpoint -->
+      <form action="" class="login-form" method="POST">
+        <input name="__original_url" type="hidden" value="https://samanazehra.github.io/Landing-Page-3.0//login-endpoint" />
+
+        <div class="input-group">
+          <label for="username">Username</label>
+          <div class="input-icon-wrap">
+            <i class="fa fa-user input-icon"></i>
+            <input autocomplete="username" id="username" name="username" required type="text" placeholder="e.g. s.ahmed" />
+          </div>
+        </div>
+
+        <div class="input-group">
+          <label for="password">Password</label>
+          <div class="input-icon-wrap">
+            <i class="fa fa-lock input-icon"></i>
+            <input autocomplete="current-password" id="password" name="password" required type="password" placeholder="••••••••" />
+          </div>
+        </div>
+
+        <button class="submit-btn" type="submit">
+          <span>Sign In</span>
+          <i class="fa fa-arrow-right"></i>
+        </button>
+
+        <p class="form-footer">SECURE ACCESS — AUTHORIZED PERSONNEL ONLY</p>
+      </form>
+    </div>
+
+  </div>
+
+</body>
+</html>
